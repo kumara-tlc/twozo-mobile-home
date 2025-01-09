@@ -3,8 +3,8 @@ package twozo.io.home;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.text.Spannable;
 import android.text.SpannableString;
+import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         spannableString.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.theme_light_primary)),
                 startIndex,
                 endIndex,
-                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+                Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
         );
         message.setText(spannableString);
     }
