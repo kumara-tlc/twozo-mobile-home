@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_dark_background">#000000</color>
+    <color name="theme_light_background">#FFFFFF</color>
+
+    <color name="theme_light_primary">#33BC7E</color>
+    <color name="theme_light_secondary">#2EA871</color>
+    <color name="theme_light_tertiary">#E7F7F0</color>
+
+    <color name="theme_light_sub_title_font">#99000000</color>
+    <color name="theme_light_normal_font">#66000000</color>
+
+    <color name="theme_logo_primary">#66C38B</color>
+    <color name="theme_logo_secondary">#83CDA1</color>
+    <color name="theme_logo_green">#4E8F68</color>
+
+    <color name="theme_light_component_outline">#1A000000</color>
+</resources>

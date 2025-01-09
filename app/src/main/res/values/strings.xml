@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Twozo</string>
+    <string name="about">About Twozo</string>
+    <string name="twozo_description">Elevate your CRM experience with Twozo\'s elegant mobile app.
+        Designed for the modern professional, it combines sleek aesthetics with powerful functionality,
+        allowing you to manage your customer relationships effortlessly.\n\nStay connected and in control
+        wherever you are. Twozo’s mobile app seamlessly integrates with your workflow, providing instant
+        access to vital information and updates.</string>
+    <string name="policy">Privacy Policy</string>
+    <string name="condition"><![CDATA[Terms & Conditions]]></string>
+    <string name="message">Simplify sales, track customers, and streamline operations with Twozo, the most affordable and easiest CRM on the Market.</string>
+    <string name="free_trial">Free Trial</string>
+    <string name="no_card">No Credit Card</string>
+    <string name="cancel_anytime">Cancel Anytime</string>
+    <string name="twozo_business">Twozo Your Business</string>
+    <string name="about_us">About us</string>
+    <string name="web_link">https://crm.twozo.io/signup</string>
+    <string name="conditions_link">https://twozo.io/terms-and-conditions/</string>
+    <string name="policy_link">https://twozo.io/privacy-policy/</string>
+</resources>
