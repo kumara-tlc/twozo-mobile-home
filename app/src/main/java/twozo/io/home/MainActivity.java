@@ -1,4 +1,4 @@
-package thelaunchclub.in.tlccrmandroid;
+package twozo.io.home;
 
 import android.content.Intent;
 import android.net.Uri;

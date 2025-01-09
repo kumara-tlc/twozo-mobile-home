@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "thelaunchclub.in.tlccrmandroid"
+    namespace = "twozo.io.home"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "thelaunchclub.in.tlccrmandroid"
+        applicationId = "twozo.io.home"
         minSdk = 29
         targetSdk = 34
         versionCode = 1

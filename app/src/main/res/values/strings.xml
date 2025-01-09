@@ -14,7 +14,7 @@
     <string name="cancel_anytime">Cancel Anytime</string>
     <string name="twozo_business">Twozo Your Business</string>
     <string name="about_us">About us</string>
-    <string name="web_link">https://crm.twozo.io/signup</string>
+    <string name="web_link">https://twozo.io</string>
     <string name="conditions_link">https://twozo.io/terms-and-conditions/</string>
     <string name="policy_link">https://twozo.io/privacy-policy/</string>
 </resources>
