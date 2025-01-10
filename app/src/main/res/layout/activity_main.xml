@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
-    android:background="@color/theme_light_background">
+    android:background="@color/theme_light_background"
+    android:padding="8dp">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
         android:layout_above="@id/content_view"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
         android:paddingVertical="24dp"
         tools:ignore="UseCompoundDrawables">
 
@@ -21,19 +21,19 @@
             android:id="@+id/logo"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:contentDescription="logo"
-            android:src="@drawable/twozo"
             android:layout_gravity="center_vertical"
-            android:layout_marginEnd="8dp" />
+            android:layout_marginEnd="8dp"
+            android:contentDescription="logo"
+            android:src="@drawable/twozo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="twozo"
             android:layout_gravity="center_vertical"
             android:fontFamily="@font/typo_graphica"
-            android:textSize="32sp"
-            android:textColor="@color/theme_dark_background" />
+            android:text="twozo"
+            android:textColor="@color/theme_dark_background"
+            android:textSize="32sp" />
 
     </LinearLayout>
 
@@ -41,94 +41,115 @@
         android:id="@+id/content_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_centerInParent="true"
         android:layout_marginBottom="40dp"
-        android:layout_centerInParent="true">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:paddingVertical="12dp"
+            android:fontFamily="@font/lexend_semibold"
             android:paddingHorizontal="26dp"
+            android:paddingVertical="12dp"
+            android:textAlignment="center"
             android:textColor="@color/theme_dark_background"
-            android:fontFamily="@font/lexend_semibold" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/sub_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/message"
-            android:textSize="15sp"
-            android:paddingVertical="12dp"
             android:layout_marginStart="44dp"
             android:layout_marginEnd="44dp"
+            android:paddingVertical="12dp"
+            android:text="@string/message"
             android:textAlignment="center"
-            android:textColor="@color/theme_light_sub_title_font" />
+            android:textColor="@color/theme_light_sub_title_font"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="55dp"
+            android:paddingEnd="45dp"
+            android:paddingVertical="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="6dp"
+                android:drawablePadding="1dp"
+                android:text="@string/free_trial"
+                android:textColor="@color/theme_dark_background"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/radio_fill_tick" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="6dp"
+                android:drawablePadding="1dp"
+                android:text="@string/no_card"
+                android:textColor="@color/theme_dark_background"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/radio_fill_tick" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="1dp"
+                android:text="@string/cancel_anytime"
+                android:textColor="@color/theme_dark_background"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/radio_fill_tick" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/trial_view"
-        android:layout_width="match_parent"
+        android:id="@+id/twozo_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/content_view"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="55dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/card_view_green_outline"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/green_button"
+        android:clickable="true"
+        android:paddingHorizontal="16dp"
         android:paddingVertical="12dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_centerInParent="true"
-            android:textSize="16sp"
-            android:drawablePadding="4dp"
-            android:textColor="@color/theme_light_primary"
-            android:text="@string/free_trial"
-            app:drawableLeftCompat="@drawable/radio_fill_tick"/>
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/twozo_business"
+            android:textColor="@color/theme_light_background"
+            android:textSize="16sp" />
 
     </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/twozo_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingVertical="12dp"
-            android:paddingHorizontal="16dp"
-            android:background="@drawable/green_button"
-            android:layout_below="@id/trial_view"
-            android:layout_marginBottom="12dp"
-            android:layout_centerHorizontal="true"
-            android:clickable="true">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/twozo_business"
-                android:layout_centerVertical="true"
-                android:fontFamily="@font/lexend_semibold"
-                android:textSize="16sp"
-                android:textColor="@color/theme_light_background"/>
-
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/about"
-            android:layout_below="@id/twozo_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="@string/about_us"
-            android:clickable="true"
-            android:textSize="16sp"
-            android:padding="12dp"
-            android:textColor="@color/theme_light_secondary"/>
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/twozo_button"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:padding="12dp"
+        android:text="@string/about_us"
+        android:textColor="@color/theme_light_secondary"
+        android:textSize="16sp" />
 
 
 </RelativeLayout>

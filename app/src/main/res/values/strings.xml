@@ -10,6 +10,8 @@
     <string name="condition"><![CDATA[Terms & Conditions]]></string>
     <string name="message">Simplify sales, track customers, and streamline operations with Twozo, the most affordable and easiest CRM on the Market.</string>
     <string name="free_trial">Free Trial</string>
+    <string name="no_card">No Credit Card</string>
+    <string name="cancel_anytime">Cancel Anytime</string>
     <string name="twozo_business">Twozo Your Business</string>
     <string name="about_us">About us</string>
     <string name="web_link">https://twozo.io</string>
