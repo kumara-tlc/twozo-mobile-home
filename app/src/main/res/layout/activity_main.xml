@@ -23,7 +23,7 @@
             android:layout_height="40dp"
             android:layout_gravity="center_vertical"
             android:layout_marginEnd="8dp"
-            android:contentDescription="logo"
+            android:contentDescription="@string/logo"
             android:src="@drawable/twozo" />
 
         <TextView
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:fontFamily="@font/typo_graphica"
-            android:text="twozo"
+            android:text="@string/twozo"
             android:textColor="@color/theme_dark_background"
             android:textSize="32sp" />
 
@@ -72,6 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:gravity="center"
             android:paddingStart="55dp"
             android:paddingEnd="45dp"
             android:paddingVertical="12dp">
@@ -79,40 +80,44 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginEnd="6dp"
-                android:drawablePadding="1dp"
+                android:gravity="center"
                 android:text="@string/free_trial"
                 android:textColor="@color/theme_dark_background"
-                android:textSize="11sp"
-                android:textStyle="bold"
-                app:drawableStartCompat="@drawable/radio_fill_tick" />
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/theme_dark_background"
+                android:layout_marginHorizontal="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginEnd="6dp"
-                android:drawablePadding="1dp"
+                android:gravity="center"
                 android:text="@string/no_card"
                 android:textColor="@color/theme_dark_background"
-                android:textSize="11sp"
-                android:textStyle="bold"
-                app:drawableStartCompat="@drawable/radio_fill_tick" />
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/theme_dark_background"
+                android:layout_marginHorizontal="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:drawablePadding="1dp"
+                android:gravity="center"
                 android:text="@string/cancel_anytime"
                 android:textColor="@color/theme_dark_background"
-                android:textSize="11sp"
-                android:textStyle="bold"
-                app:drawableStartCompat="@drawable/radio_fill_tick" />
-
-
+                android:textSize="12sp"
+                android:textStyle="bold" />
         </LinearLayout>
+
+
 
     </LinearLayout>
 
@@ -126,7 +131,9 @@
         android:background="@drawable/green_button"
         android:clickable="true"
         android:paddingHorizontal="16dp"
-        android:paddingVertical="12dp">
+        android:paddingVertical="12dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -139,6 +146,7 @@
 
     </RelativeLayout>
 
+
     <TextView
         android:id="@+id/about"
         android:layout_width="wrap_content"
@@ -147,9 +155,12 @@
         android:layout_centerHorizontal="true"
         android:clickable="true"
         android:padding="12dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         android:text="@string/about_us"
         android:textColor="@color/theme_light_secondary"
         android:textSize="16sp" />
+
 
 
 </RelativeLayout>

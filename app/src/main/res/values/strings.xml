@@ -17,4 +17,6 @@
     <string name="web_link">https://twozo.io</string>
     <string name="conditions_link">https://twozo.io/terms-and-conditions/</string>
     <string name="policy_link">https://twozo.io/privacy-policy/</string>
+    <string name="twozo">twozo</string>
+    <string name="logo">logo</string>
 </resources>
