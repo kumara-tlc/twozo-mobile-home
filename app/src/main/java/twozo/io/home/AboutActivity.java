@@ -1,7 +1,6 @@
 package twozo.io.home;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -24,8 +23,9 @@ public class AboutActivity extends AppCompatActivity {
     }
 
     private void navigateToWebView(final String url) {
-        final Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        final Intent intent = new Intent(this, WebViewActivity.class);
 
+        intent.putExtra(getString(R.string.url), url);
         startActivity(intent);
     }
 }
