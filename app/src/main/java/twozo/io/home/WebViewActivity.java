@@ -2,8 +2,10 @@ package twozo.io.home;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,6 +25,12 @@ public class WebViewActivity extends AppCompatActivity {
         final WebView webView = findViewById(R.id.web_view);
         final WebSettings webSettings = webView.getSettings();
 
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageFinished(final WebView view, final String url) {
+                findViewById(R.id.progress_bar).setVisibility(View.GONE);
+            }
+        });
         webSettings.setJavaScriptEnabled(true);
         webSettings.setBuiltInZoomControls(true);
         webSettings.setDisplayZoomControls(false);
